@@ -71,7 +71,7 @@ class Pg:
         s.pg[coord[1]][coord[0]-s.bX[0]] = "o"
         return True
 
-for part in range(1,3):
+for part in [1,2]:
     myPg = Pg(data, part)
 
     if part == 2: units = 1
@@ -80,13 +80,8 @@ for part in range(1,3):
     while True:
         if not myPg.processCoord(myPg.getStart()):
             break
-        #myPg.print() 
         units += 1
-
-       
+        
     print("Part "+str(part)+":",units)
-
-
-test = 1
 
     
