@@ -63,7 +63,7 @@ class Pg:
     def processCoord(s, coord):
         co = [(coord[0], coord[1]+1), (coord[0]-1, coord[1]+1), (coord[0]+1, coord[1]+1)]
         for c in co:
-            if not s.isValid(c):  # stop Program
+            if not s.isValid(c): 
                 return False               
             elif s.isFree(c):
                 return s.processCoord(c)
