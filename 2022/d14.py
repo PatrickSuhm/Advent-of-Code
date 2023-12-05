@@ -36,7 +36,6 @@ class Pg:
             for x in range(0, s.bX[1]-s.bX[0]+1):
                 s.pg[s.bY[1]][x] = "#"  
 
-
     def print(s):
         for i in range(len(s.pg)):
             print("".join(s.pg[i]))
@@ -56,7 +55,6 @@ class Pg:
                     return True
             return False
         
-    
     def isFree(s, coord):
         if s.pg[coord[1]][coord[0]-s.bX[0]] != ".":
             return False
