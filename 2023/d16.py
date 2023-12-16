@@ -39,7 +39,6 @@ def addTiles(coo,dir):
         return
     
     cooSet.add((coo[0],coo[1],dir))
-    #print((coo[0],coo[1],dir))
 
     if c == ".":
        addTiles(getNewCoo(coo,dir), dir)
